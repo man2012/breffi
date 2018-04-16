@@ -1,0 +1,31 @@
+{% load i18n %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Contacts</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href='{% static 'bootstrap/dist/css/bootstrap.min.css' %}' integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script type="text/javascript" src='{% static 'jquery/dist/jquery.js' %}'></script>
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Begin page content -->
+    <main role="main" class="container">
+    {% block content %}
+    {% endblock %}
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"></span>
+      </div>
+    </footer>
+  </body>
+</html>
+

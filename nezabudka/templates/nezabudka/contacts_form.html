@@ -1,0 +1,13 @@
+{% extends "nezabudka/base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<h1>Create contact</h1>
+    <form action="" method="post" id="createForm">{% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-primary" type="submit" value="Save" />
+        <a class="btn btn-primary" href="/">Go back</a>
+    </form>
+{% include "validate.html" %}    
+{% endblock %}

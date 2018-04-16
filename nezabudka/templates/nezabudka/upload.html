@@ -1,0 +1,12 @@
+{% extends "nezabudka/base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<h1>Import contacts</h1>
+    <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-primary" type="submit" value="Import" />
+        <a class="btn btn-primary" href="/">Go back</a>
+    </form>
+{% endblock %}

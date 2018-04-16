@@ -1,0 +1,15 @@
+{% extends "nezabudka/base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<h1>Detail contact</h1>
+    <p>ID: {{ object.id }}</p>
+    <p>Externalid:</p>
+    <p>Name: {{ object.name }}</p>
+    <p>Company: {{ object.company }}</p>
+    <p>Email: {{ object.email }}</p>
+    <p>Phone: {{ object.phone }}</p>
+    <p>Interest: {{ object.interest }}</p>
+    <a class="btn btn-primary" href="/">Go back</a>
+{% endblock %}
